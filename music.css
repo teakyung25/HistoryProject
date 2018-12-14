@@ -1,0 +1,81 @@
+.line-c{
+	 overflow: hidden;
+    height: 30px;
+    width: 40px;
+    position: fixed;
+    cursor: pointer;
+    background-color: grey;
+    bottom: 10px;
+    right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    z-index: 2;
+}
+.line{
+height: 2.5px;
+    width: 3px;
+    bottom: -0;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    animation-duration: 500ms;
+    -webkit-animation-play-state: running;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 500ms;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.line.stop{
+    animation: none;
+    animation-name: none;
+}
+.line#line-1{
+    left:3px;
+	animation-name: lineHeight1;
+    animation-delay:1ms;
+}
+.line#line-2{
+    left:9px;
+	animation-name: lineHeight2;
+    animation-delay:300ms; 
+}
+.line#line-3{
+    left:15px;
+	animation-name: lineHeight3; 
+    animation-delay:600ms; 
+}
+.line#line-4 {
+    left:21px;
+    -webkit-animation-name: lineHeight4; 
+    -webkit-animation-delay: 900ms; 
+	animation-name: lineHeight4; 
+    animation-delay:900ms; 
+}
+.line#line-5{
+    left:27px;
+	animation-name: lineHeight5; 
+    animation-delay:1200ms; 
+}
+
+@keyframes lineHeight1 {
+	from{height:2.5px;}	
+	to{height:22px;}	
+}
+@keyframes lineHeight2 {
+	from{height:2.5px;}	
+	to{height:15px;}	
+}
+@keyframes lineHeight3 {
+	from{height:2.5px;}	
+	to{height:30px;}	
+}
+@keyframes lineHeight4 {
+	from{height:2.5px;}
+	to{height:25px;}	
+}
+@keyframes lineHeight5 {
+	from{height:2.5px;}
+	to{height:15px;}	

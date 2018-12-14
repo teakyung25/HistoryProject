@@ -1,0 +1,129 @@
+*{
+	font-family: 'Special Elite', cursive;
+}
+body, html{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: -1;
+}
+
+.intro{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	color:white;
+}
+
+#intro{
+	color:white;
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	margin: 0;
+	padding-top:150px;
+	letter-spacing: 5px; 
+	font-size: 20px;
+	animation-name: introanimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes introanimation {
+	from{font-size: 0;}
+	to{font-size: 50px;}
+}
+
+.slideInRight{
+	display: block;
+}
+
+#playbutton{
+	border:solid 4px whitesmoke;
+	font-family: 'Merriweather', serif;
+	padding: 10px;
+	width: 80px;
+	margin: 20px;
+	background-color: white;
+	color: black;
+}
+
+.gContainer{
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
+#map{
+	z-index: -1;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+.gchildContainer{
+	text-align: center;
+	width: 100%;
+	height:60px;
+	background-color: white;
+}
+
+#gameH1{
+	font-family: 'Special Elite', cursive;
+	color: black;
+	font-size: 25px;
+	padding: 15px;
+	margin: 0;
+}
+
+.gameplayContainer{
+	width: 35%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.gameplay{
+	width: 100%;
+	height: 100%;
+	float: left;
+	left: 0;
+	background-color:rgba(20,20,20,0.9);
+	z-index: 1;
+}
+
+.bottombar{
+	width: 35%;
+	height: 40px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+}
+.contentContainer{
+	z-index: 2;
+	color: white;
+	font-family: 'Special Elite', cursive;
+	margin: 10px;
+}
+
+.mnbtn{
+	border: none;
+	background-color: transparent;
+	padding:5px;
+	position: absolute;
+}
+
+#rightarrow{
+	right: 65%;
+}
+#l1{
+	position: absolute;
+	left: 2.5%;
+	color: black;
+}
+
+#r1{
+	position: absolute;
+	right: 67.5%;
+	color: black;
+}
