@@ -4,11 +4,11 @@ $(function(){
   var seconds= d.getSeconds();
   var arrayImage = ["koreanwar1.jpg", "koreanwar2.jpg", "koreanwar3.jpg"];
   if(seconds >= 10 && seconds < 12){
-    document.body.style.background = "url(" + arrayImage[0] + ")";
+    document.body.style.background = "url(" + arrayImage[0] + ") no-repeat cover";
   } else if (seconds >= 12 && seconds < 14) {
-    document.body.style.background = "url(" + arrayImage[1] + ")";
+    document.body.style.background = "url(" + arrayImage[1] + ") no-repeat cover";
   } else if(seconds >= 14 && seconds < 16){
-    document.body.style.background = "url(" + arrayImage[2] + ")";
+    document.body.style.background = "url(" + arrayImage[2] + ") no-repeat cover";
   }
 
 
